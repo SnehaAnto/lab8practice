@@ -20,8 +20,10 @@ public class MyStackTest
        MyStack<Integer> stack = new MyStack<>();
         stack.push(1);
         stack.push(2);
+        stack.pop();
+        stack.pop();
 
-        assertEquals(false, stack.isEmpty());
+        assertEquals(true, stack.isEmpty());
 
     }
 }
